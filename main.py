@@ -20,3 +20,4 @@ async def on_message(msg):
     if(msg.content.startswith(comand_char + "help")):
         await msg.channel.send("No")
 
+client.run(TOKEN)
