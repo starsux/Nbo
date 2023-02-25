@@ -1,7 +1,7 @@
 import discord
+import os
 
-
-TOKEN = "MTA3ODQxNjYxMTM2NDU2OTExOA.GoI6Eg.uqTRGZahXOuAM6xPvAopwikuzeVN78dAm2wUM8"
+TOKEN = os.getenv('TOKEN')
 client = discord.Client(intents=discord.Intents.default())
 
 
