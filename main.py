@@ -4,7 +4,7 @@ import os
 TOKEN = os.getenv('TOKEN')
 
 class BotClient(discord.Client):
-    @client.event
+    @self.event
     async def on_ready():
         print(f'{self.user} has connected to discord')
 
