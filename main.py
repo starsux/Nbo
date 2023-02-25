@@ -4,6 +4,8 @@ import os
 TOKEN = os.getenv('TOKEN')
 
 intents = discord.Intents.default()
+intents.message_content = True
+
 client = discord.Client(intents=intents)
 
 command_char = "/"
