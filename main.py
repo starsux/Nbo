@@ -10,7 +10,5 @@ class BotClient(discord.Client):
 
 
 intents = discord.Intents.default()
-intents.message_content = True
-
 client = BotClient(intents=intents)
 client.run(TOKEN)
