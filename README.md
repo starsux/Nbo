@@ -1,0 +1,2 @@
+# Nbo
+"Enbo" Naptora bot
