@@ -1,6 +1,6 @@
 import discord
 import os
-print(os.getenv('TOKEN'))
+
 TOKEN = os.getenv('TOKEN')
 client = discord.Client(intents=discord.Intents.default())
 
