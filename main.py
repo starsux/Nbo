@@ -2,11 +2,11 @@ import discord
 import os
 
 TOKEN = os.getenv('TOKEN')
-client = discord.Client(intents=discord.Intents.default())
+
+class Bot(discord.client):
+    @client.event
+    async def on_ready():
+        print(f'{client.user} has connected to discord')
 
 
-@client.event
-async def on_ready():
-    print(f'{client.user} has connected to discord')
-
-client.run(TOKEN)
+client.run(TOKEN, intents=discord.Intents.default())
